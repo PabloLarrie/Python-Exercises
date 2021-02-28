@@ -8,4 +8,9 @@ largest = listt[0]
 for v in listt:
     if v >= largest:
         largest = v
+
 print(largest)
+
+g = sorted(listt)
+        
+print(g[-1])

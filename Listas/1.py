@@ -5,6 +5,6 @@ print(sum(listt))
 
 num = 0
 for v in listt:
-    num = num + v
+    num += v
 
 print(num)

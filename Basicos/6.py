@@ -6,6 +6,6 @@
 # Tuple : ('3', ' 5', ' 7', ' 23')
 
 lista = input("Indique aquí su lista :")
-
-print(list(lista.replace(',','')))
-print(tuple(lista.replace(',','')))
+lista2 = lista.replace(',','')
+print(list(lista2))
+print(tuple(lista2))

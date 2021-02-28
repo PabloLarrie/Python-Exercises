@@ -4,8 +4,8 @@
 # 2014-07-05 14:34:14
 
 
-from datetime import date, time, datetime
+from datetime import datetime
 
-time = datetime.now()
+mytime = datetime.now()
 
-print(f"Current date and time : {time}")
+print(f"Current date and time : {mytime}")

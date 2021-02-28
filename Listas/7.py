@@ -4,7 +4,7 @@ sample_list = ['abc', 'xyz', 'aba', '1221', 'caac', 'moso', 'tronco', 'oso', 'hu
 
 final_list = []
 for listt in sample_list:
-    if not listt in final_list:
+    if listt not in final_list:
         final_list.append(listt)
 
 print(final_list)

@@ -4,10 +4,10 @@ sample_list = ['abc', 'xyz', 'aba', '1221', 'caac', 'moso', 'tronco', 'oso', 'hu
 empty_list = []
 
 def emptyness (listt):
-    if listt == []:
-        print("La lista está vacia")
-    else:
+    if listt :
         print("La lista no está vacia")
+    else:
+        print("La lista está vacia")
 
 emptyness(sample_list)
 emptyness(empty_list)
