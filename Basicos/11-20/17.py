@@ -2,12 +2,7 @@
 
 
 def closeness(n):
-    if n >= 900 and n <= 1100:
-        return True
-    if n >= 1900 and n <= 2100:
-        return True
-    else:
-        return False
+    return 900 <= n <= 1100 or 1900 <= n <= 2100
 
 
 print(closeness(1900))

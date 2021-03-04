@@ -3,23 +3,20 @@
 # Expected Output : ['Green', 'White', 'Black']
 
 sample_list = ["Red", "Green", "White", "Black", "Pink", "Yellow"]
-sample_list2 = ["Red", "Green", "White", "Black", "Pink", "Yellow"]
+sample_list2 = ["Red", "Red", "Red", "Red", "Red", "Green", "White", "Black", "Pink", "Yellow"]
 
-sample_list.pop(5)
-sample_list.pop(4)
-sample_list.pop(0)
+indexes_to_delete = [5, 4, 0]
+
+for i in indexes_to_delete:
+    sample_list.pop(i)
 
 print(sample_list)
 
 final_list = []
-for v in sample_list2:
-    if v == sample_list2[0]:
-        pass
-    elif v == sample_list2[4]:
-        pass
-    elif v == sample_list2[5]:
-        pass
-    else:
+for i, v in enumerate(sample_list2):
+    if i not in indexes_to_delete:
         final_list.append(v)
+
+final_list = [v for i, v in enumerate(sample_list2) if i not in indexes_to_delete]
 
 print(final_list)

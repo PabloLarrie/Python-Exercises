@@ -3,7 +3,7 @@
 
 
 def stringing(strs):
-    if strs[:2] == "Is" or strs[:2] == "is":
+    if strs[:2].casefold() == "is": # Mejor que .lower()
         return strs
     else:
         return "Is " + strs

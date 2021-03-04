@@ -16,4 +16,6 @@ for v in range(6):
 for v in cube:
     print(v)
 
-print(cube)
+# print(cube)
+
+cube = [[["*" for _ in range(4)] for _ in range(3)] for _ in range(6)]

@@ -4,10 +4,10 @@
 
 def critical(a, b, c):
     h = a + b + c
-    if a == b and b == c:
+    if a == b == c:
         return h * 3
     else:
         return h
 
 
-print(critical(3, 4, 3))
+print(critical(3, 3, 3))

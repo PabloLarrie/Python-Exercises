@@ -7,4 +7,5 @@ for v in lista1:
     if v % 2 != 0:
         lista2.append(v)
 
-print(lista2)
+result = [v for v in lista1 if v % 2 != 0]
+print(result)
