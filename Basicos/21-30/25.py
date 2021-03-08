@@ -4,11 +4,8 @@
 # -1 -> [1, 5, 8, 3] : False
 
 
-def contained(list, n):
-    if n in list:
-        return "Mu bien maxote"
-    else:
-        "Pa la prósima"
+def contained(lista, n):
+    return n in lista
 
 
 print(contained([1, 5, 8, 3], 3))

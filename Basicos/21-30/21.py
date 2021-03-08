@@ -3,10 +3,7 @@
 
 
 def parity(n):
-    if n % 2 == 0:
-        return "This number is even"
-    else:
-        return "This number is odd"
+    return "This number is even" if n % 2 == 0 else "This number is odd"
 
 
 print(parity(10))

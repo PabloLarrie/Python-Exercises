@@ -3,11 +3,11 @@
 
 
 lista = []
-for i, v in enumerate(range(30)):
-    if v != 0 and i < 6 or i > 25:
-        lista.append(v * v)    
+for v in range(1, 31):
+    if v < 6 or v > 26:
+        lista.append(v * v)
 
-list2 = [ (v * v) for i, v in enumerate(range(30)) if v != 0 and i < 6 or i > 25 ]
+list2 = [v * v for v in range(1, 31) if v < 6 or v > 26]
 
 print(lista)
 print(list2)
