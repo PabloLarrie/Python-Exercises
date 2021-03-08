@@ -7,7 +7,7 @@ sample_list = ['abc', 'xyz', 'aba', '1221', 'caac', 'moso', 'tronco', 'oso', 'hu
 
 count = 0
 for v in sample_list:
-    if len(v) > 2 and v[0] == v[-1]:
+    if len(v) >= 2 and v[0] == v[-1]:
         count += 1
 
 print (count)

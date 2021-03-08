@@ -3,11 +3,13 @@
 sample_list = ['abc', 'xyz', 'aba', '1221', 'caac', 'moso', 'tronco', 'oso', 'huesoh', 'aa', 'xyz', 'caac']
 empty_list = []
 
-def emptyness (listt):
-    if listt :
+
+def emptiness(listt):
+    if listt:
         print("La lista no está vacia")
     else:
         print("La lista está vacia")
 
-emptyness(sample_list)
-emptyness(empty_list)
+
+emptiness(sample_list)
+emptiness(empty_list)

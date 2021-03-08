@@ -6,6 +6,11 @@
 # Tuple : ('3', ' 5', ' 7', ' 23')
 
 lista = input("Indique aquí su lista :")
-lista2 = lista.replace(',','')
-print(list(lista2))
-print(tuple(lista2))
+
+lista = lista.replace(' ', '')
+lista = lista.split(',')
+                 # | VALOR | ITERACION       | CONDICION |
+lista = [valor for valor in lista if valor]
+
+print(lista)
+print(tuple(lista))

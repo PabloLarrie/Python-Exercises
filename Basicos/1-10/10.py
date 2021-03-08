@@ -2,9 +2,8 @@
 # Sample value of n is 5
 # Expected Result : 615
 
-value = input("Introduce el número: ")
-k = str(value)
+k = input("Introduce el número: ")
 g = k + k
 i = g + k
-final = int(k) + int(g) + int(i)
+final = int(k) + int(k + k) + int(k + k + k)
 print(final)
