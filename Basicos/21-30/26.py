@@ -2,8 +2,7 @@
 
 
 def histogram(list):
-    for v in list:
-        print("*" * v)
+    [print("*" * v) for v in list]
 
 
 histogram([1, 2, 4, 6, 7])
