@@ -4,7 +4,7 @@ import timeit
 
 
 list_first = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] 
-list_second = [7, 8, 9, 10, 11, 12, 13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list_second = [7, 8, 9, 10, 11, 12, 13, 1, 2, 3, 4, 5, 6]
 
 
 def check_circ_identity(lista, list2):
