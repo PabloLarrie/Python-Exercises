@@ -1,20 +1,10 @@
 #  Write a Python program to get unique values from a list.
 
-list_first = [1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] 
+list_first = [1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 13, 7, 8, 9, 10, 11, 11, 12, 13] 
 
-def uniqueness(list):
-    list_second = []
-    for v in list_first:
-        for g in list_first:
-            if g not in list_first:
-                list_second.append(g)
-    return list_second
+to_delete = [v for v in list_first if list_first.count(v) > 1]
 
-print(list_first)
-print(uniqueness(list_first))
+set1 = set(list_first)
+set2 = set(to_delete)
 
-# def uniqueness(list):
-#     unique_list = [g for v in list_first for g in list_first if g not in list_first]
-#     return unique_list
-
-# print(uniqueness(list_first)) 
+print(set1 ^ set2)
