@@ -1,10 +1,8 @@
 # Write a Python program to add two objects if both objects are an integer type.
 
-desintoxication = []
-
 
 def addicted(a, b):
-    if not (isinstance(a, int) and isinstance(b, int)):
+    if not isinstance(a, int) or not isinstance(b, int):
         raise TypeError("Inputs must be integers")
     print(a + b)
 
