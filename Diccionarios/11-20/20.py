@@ -11,3 +11,14 @@ diccionario = [
     {"VIII": "S007"},
 ]
 # Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'}
+
+#No me ha gustado nada hacerlo así D:
+
+results = []
+
+for v in diccionario:
+    res = list(v.values())
+    for f in res:
+        results.append(f)
+
+print(set(results))
