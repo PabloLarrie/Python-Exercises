@@ -5,7 +5,7 @@ key = "MiCasa"
 
 
 def sipi(lista, clave):
-    return clave in my_dicc
+    return clave in lista
 
 
 print(sipi(my_dicc, key))

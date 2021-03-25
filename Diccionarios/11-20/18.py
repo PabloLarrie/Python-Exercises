@@ -4,8 +4,16 @@ d = {1: 11, 2: 1, 3: 11, 4: 1, 5: 3, 6: 2}
 d2 = {}
 
 
+# def whether_is_empty_or_not(listt):
+#     return True if listt.items() else False
+
+
+# def whether_is_empty_or_not(listt):
+#     return bool(listt.items())
+
+
 def whether_is_empty_or_not(listt):
-    return True if listt.items() else False
+    return bool(listt)
 
 
 print(whether_is_empty_or_not(d))
