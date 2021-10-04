@@ -9,16 +9,8 @@ dic = {
     ],
 }
 
-
-# def go_inside(formula):
-#     result = [y for y in formula.values() if type(y) == list]
-#     second = [v for v in result]
-#     return second
-
-
 def go_inside(formula):
     result = [y for v in formula.values() if type(v) == list for y in v]
     return result
-
 
 print(go_inside(dic))

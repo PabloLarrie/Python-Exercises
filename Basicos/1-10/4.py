@@ -5,6 +5,4 @@
 
 import math
 
-radio = float(input("Introduce el radio del área a calcular :"))
-area = math.pi * pow(radio, 2) 
-print(area)
+print(math.pi * pow(float(input("radio?:\n")), 2))

@@ -5,12 +5,5 @@
 # List : ['3', ' 5', ' 7', ' 23']
 # Tuple : ('3', ' 5', ' 7', ' 23')
 
-lista = input("Indique aquí su lista :")
-
-lista = lista.replace(' ', '')
-lista = lista.split(',')
-                 # | VALOR | ITERACION       | CONDICION |
-lista = [valor for valor in lista if valor]
-
-print(lista)
-print(tuple(lista))
+lista = [valor for valor in input("Indique aquí su lista :").replace(' ', '').split(',')]
+print(f"List: {lista}\nTuple: {tuple(lista)}")
