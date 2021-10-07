@@ -7,15 +7,15 @@ set3 = {2, 90, 48, 12, 6, 14}
 set1 = set(lista1)
 set2 = set(lista2)
 
-final = set()
-for v in lista1:
-    for g in lista2:
-        if v == g:
-            final.add(v)
+# final = set()
+# for v in lista1:
+#     for g in lista2:
+#         if v == g:
+#             final.add(v)
+#
+# final = {v for v in lista1 for g in lista2 if v == g}
 
-final = {v for v in lista1 for g in lista2 if v == g}
-
-print(final)
+# print(final)
 
 # Para calcular los comunes
 print(bool(set1.intersection(set2)))
